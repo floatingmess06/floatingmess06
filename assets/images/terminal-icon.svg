@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Terminal Window -->
+  <rect x="10" y="10" width="80" height="80" rx="5" ry="5" fill="#1e1e1e" stroke="#444" stroke-width="2"/>
+  
+  <!-- Window Controls -->
+  <circle cx="20" cy="20" r="3" fill="#ff5f56"/>
+  <circle cx="30" cy="20" r="3" fill="#ffbd2e"/>
+  <circle cx="40" cy="20" r="3" fill="#27c93f"/>
+  
+  <!-- Terminal Prompt -->
+  <text x="20" y="40" fill="#4cd137" font-family="monospace" font-size="10">$</text>
+  
+  <!-- Animated Cursor -->
+  <rect id="cursor" x="30" y="35" width="2" height="10" fill="#f0f0f0">
+    <animate attributeName="opacity" values="0;1;0" dur="1.5s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Command Examples -->
+  <text x="20" y="60" fill="#00a8ff" font-family="monospace" font-size="8">whoami</text>
+  <text x="20" y="75" fill="#00a8ff" font-family="monospace" font-size="8">ls projects/</text>
+  <text x="20" y="90" fill="#00a8ff" font-family="monospace" font-size="8">help</text>
+</svg>

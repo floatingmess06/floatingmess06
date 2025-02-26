@@ -1,0 +1,120 @@
+/* This file should be saved in your GitHub profile repository as 'assets/css/styles.css' */
+/* You'll need to include this in your README using an HTML comment hack */
+
+:root {
+  --terminal-bg: #1e1e1e;
+  --terminal-text: #f0f0f0;
+  --terminal-prompt: #4cd137;
+  --terminal-command: #00a8ff;
+  --terminal-output: #dcdde1;
+  --terminal-border: #444;
+}
+
+.terminal-container {
+  background-color: var(--terminal-bg);
+  border-radius: 6px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  font-family: 'Fira Code', 'Courier New', monospace;
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.terminal-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.terminal-button.close { background-color: #ff5f56; }
+.terminal-button.minimize { background-color: #ffbd2e; }
+.terminal-button.maximize { background-color: #27c93f; }
+
+.terminal-title {
+  margin-left: 10px;
+  color: var(--terminal-text);
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.terminal-prompt {
+  color: var(--terminal-prompt);
+  font-weight: bold;
+}
+
+.command-line {
+  display: flex;
+  margin: 10px 0;
+}
+
+.command-trigger {
+  color: var(--terminal-command);
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+.command-trigger:hover {
+  text-decoration: underline;
+}
+
+.command-output {
+  color: var(--terminal-output);
+  margin: 10px 0 20px 20px;
+  line-height: 1.5;
+}
+
+.cursor {
+  display: inline-block;
+  width: 8px;
+  height: 16px;
+  background-color: var(--terminal-text);
+  margin-left: 4px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.skill-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.skill-icon {
+  transition: transform 0.2s ease;
+}
+
+.skill-icon:hover {
+  transform: translateY(-5px);
+}
+
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Dark mode adjustments for GitHub stats */
+.stats-container img {
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.1));
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .stats-container {
+    flex-direction: column;
+  }
+}
