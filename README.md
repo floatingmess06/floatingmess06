@@ -49,10 +49,10 @@
 </div>
 
 <!-- Hidden style injection - This won't render on GitHub but allows us to reference elements with CSS classes -->
-<!--
+
 <link rel="stylesheet" href="https://raw.githubusercontent.com/floatingmess06/floatingmess06/main/assets/css/styles.css">
 <script src="https://raw.githubusercontent.com/floatingmess06/floatingmess06/main/assets/js/script.js"></script>
--->
+
 
 <h1 align="center">
   <img src="https://raw.githubusercontent.com/kaueMarques/kaueMarques/master/hi.gif" width="30px">
